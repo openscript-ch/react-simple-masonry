@@ -9,7 +9,7 @@ export default defineConfig({
     lib: {
       entry: 'src/index.tsx',
       name: packageJson.name,
-      fileName: (format) => `react-vite-storybook-typescript-starter.${format}.js`,
+      fileName: (format) => `react-simple-masonry.${format}.js`,
     },
     rollupOptions: {
       external: ['react'],
