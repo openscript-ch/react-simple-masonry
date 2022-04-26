@@ -1,0 +1,103 @@
+{
+  "name": "react-vite-storybook-typescript-starter",
+  "version": "0.1.0",
+  "description": "A React component library starter with Storybook, Vite and Typescript.",
+  "keywords": [
+    "react",
+    "react-component",
+    "typescript",
+    "starter",
+    "vite",
+    "storybook"
+  ],
+  "homepage": "https://github.com/openscript-ch/react-vite-storybook-typescript-starter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openscript-ch/react-vite-storybook-typescript-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/openscript-ch/react-vite-storybook-typescript-starter/issues"
+  },
+  "author": "openscript GmbH <hi+npm@openscript.ch>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/react-vite-storybook-typescript-starter.umd.js",
+  "module": "./dist/react-vite-storybook-typescript-starter.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-vite-storybook-typescript-starter.es.js",
+      "require": "./dist/react-vite-storybook-typescript-starter.umd.js"
+    }
+  },
+  "size-limit": [
+    {
+      "path": "./dist/react-vite-storybook-typescript-starter.es.js"
+    },
+    {
+      "path": "./dist/react-vite-storybook-typescript-starter.umd.js"
+    }
+  ],
+  "scripts": {
+    "build": "vite build",
+    "build:storybook": "build-storybook",
+    "check:format": "eslint . --max-warnings 0",
+    "check:types": "tsc --noEmit",
+    "check:size": "npm run build && size-limit",
+    "postbuild": "node ./postbuild.js",
+    "release:major": "standard-version --release-as major && git push --follow-tags",
+    "release:minor": "standard-version --release-as minor && git push --follow-tags",
+    "release:patch": "standard-version --release-as patch && git push --follow-tags",
+    "release:create-github-release": "conventional-github-releaser -p angular",
+    "serve": "vite preview",
+    "start": "start-storybook -p 6007",
+    "storybook": "start-storybook -p 6007",
+    "test": "vitest",
+    "coverage": "vitest --coverage",
+    "upgrade-interactive": "npm-check -u"
+  },
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@emotion/babel-plugin": "^11.9.2",
+    "@emotion/react": "^11.9.0",
+    "@size-limit/preset-small-lib": "7.0.8",
+    "@storybook/addon-actions": "6.4.22",
+    "@storybook/addon-docs": "6.4.22",
+    "@storybook/addon-essentials": "6.4.22",
+    "@storybook/addon-links": "6.4.22",
+    "@storybook/addon-storysource": "6.4.22",
+    "@storybook/builder-vite": "^0.1.30",
+    "@storybook/react": "6.4.22",
+    "@types/react": "17.0.44",
+    "@types/react-dom": "17.0.16",
+    "@typescript-eslint/eslint-plugin": "5.21.0",
+    "@typescript-eslint/parser": "5.21.0",
+    "@vitejs/plugin-react": "^1.3.1",
+    "babel-loader": "^8.2.5",
+    "conventional-github-releaser": "3.1.5",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.29.4",
+    "eslint-plugin-react-hooks": "4.4.0",
+    "eslint-plugin-storybook": "^0.5.11",
+    "npm-check": "5.9.2",
+    "prettier": "2.6.2",
+    "size-limit": "7.0.8",
+    "standard-version": "9.3.2",
+    "typescript": "4.6.3",
+    "vite": "^2.9.5",
+    "vite-plugin-dts": "1.1.1",
+    "vite-plugin-markdown": "2.0.2",
+    "vitest": "0.10.0"
+  }
+}
