@@ -91,6 +91,7 @@
     "eslint-plugin-react": "7.29.4",
     "eslint-plugin-react-hooks": "4.4.0",
     "eslint-plugin-storybook": "^0.5.11",
+    "lorem-ipsum": "^2.0.4",
     "npm-check": "5.9.2",
     "prettier": "2.6.2",
     "size-limit": "7.0.8",

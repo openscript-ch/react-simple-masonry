@@ -13,6 +13,18 @@ Add the package with the package manager via NPMs registry of choice to your pro
 
 ## Resources
 
+- ## Photos
+- Photos
+  - https://unsplash.com/photos/pdALzg0yN-8
+  - https://unsplash.com/photos/ZCHj_2lJP00
+  - https://unsplash.com/photos/46TvM-BVrRI
+  - https://unsplash.com/photos/HlI03bNHhBI
+  - https://unsplash.com/photos/FbhNdD1ow2g
+  - https://unsplash.com/photos/qs4j-39TaBQ
+  - https://unsplash.com/photos/LEpfefQf4rU
+  - https://unsplash.com/photos/oA6zqMdnhjE
+  - https://unsplash.com/photos/RCfi7vgJjUY
+  - https://unsplash.com/photos/7AIDE8PrvA0
 - Tools
   - [**Vite**](https://vitejs.dev/): Next Generation Frontend Tooling
   - [**Vitest**](https://vitest.dev/): A blazing fast unit-test framework powered by Vite.
